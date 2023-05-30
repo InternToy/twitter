@@ -1,5 +1,7 @@
 .widgets {
   flex: 0.3;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .widgets__input {
@@ -18,13 +20,13 @@
 }
 
 .widgets__searchIcon {
-  color: gray;
+  color: 536471;
 }
 
 .widgets__widgetContainer {
   margin-top: 15px;
   margin-left: 20px;
-  padding: 20px;
+  padding: 20px 0px 20px 20px;
   background-color: #f5f8fa;
   border-radius: 20px;
 }
@@ -32,4 +34,17 @@
 .widgets__widgetContainer > h2 {
   font-size: 18px;
   font-weight: 800;
+ 
+}
+
+
+.widgets__widgetContainer > h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.widgets__widgetContainer > p {
+  font-size: 15px;
+  font-weight: 700;
+  color: #536471;
 }

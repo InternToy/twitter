@@ -12,12 +12,12 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Button } from "@mui/material";
 
-const Sidebar = () =>{  
+const Sideba = () =>{  
   return (
     <div className="sidebar">
       <TwitterIcon className="sidebar__twitterIcon" />
       <a href="/" className="a">
-      <SidebarOption active Icon={HomeIcon} text="Home" />
+      <SidebarOption  Icon={HomeIcon} text="Home" />
       </a>
       <SidebarOption Icon={SearchIcon} text="Explore" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
@@ -25,7 +25,7 @@ const Sidebar = () =>{
       <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
       <SidebarOption Icon={ListAltIcon} text="Lists" />
       <a href="/profile" className="a">
-      <SidebarOption Icon={PermIdentityIcon} text="Profile" />
+      <SidebarOption active Icon={PermIdentityIcon} text="Profile" />
       </a>
       <SidebarOption Icon={MoreHorizIcon} text="More" />
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
@@ -36,4 +36,4 @@ const Sidebar = () =>{
   );
 }
 
-export default Sidebar;
+export default Sideba;

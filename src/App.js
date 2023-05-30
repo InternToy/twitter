@@ -1,16 +1,19 @@
 import React from "react";
-import Sidebar from "./page/Sidebar";
-import Feed from "./page/Feed";
-import Widgets from "./page/Widgets";
+
+import {Route, Routes} from "react-router-dom";
+import Profile from "./page/Profile";
+import Home from "./page/Home";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <Feed />
-      <Widgets />
-    </div>
+    <>
+    <Routes>
+    <Route path="/" element = {<Home/>}/>
+    <Route path="/profile" element = {<Profile/>}/>
+  </Routes>
+  </>
   );
 }
 

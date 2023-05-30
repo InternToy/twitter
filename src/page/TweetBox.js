@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TweetBox.css";
 import { Avatar, Button } from "@mui/material";
-// import db from "../firebase";
+import profile from './profile.png'
 
 function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState("");
@@ -10,15 +10,7 @@ function TweetBox() {
   const sendTweet = (e) => {
     e.preventDefault();
 
-    // db.collection("posts").add({
-    //   displayName: "Rafeh Qazi",
-    //   username: "cleverqazi",
-    //   verified: true,
-    //   text: tweetMessage,
-    //   image: tweetImage,
-    //   avatar:
-    //     "https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png",
-    // });
+
 
     setTweetMessage("");
     setTweetImage("");
@@ -28,7 +20,7 @@ function TweetBox() {
     <div className="tweetBox">
       <form>
         <div className="tweetBox__input">
-          <Avatar src="../profile.jpg" />
+          <Avatar src = {profile} alt ="profile"/>
           <input
             onChange={(e) => setTweetMessage(e.target.value)}
             value={tweetMessage}
@@ -40,7 +32,6 @@ function TweetBox() {
           value={tweetImage}
           onChange={(e) => setTweetImage(e.target.value)}
           className="tweetBox__imageInput"
-          placeholder="Optional: Enter image URL"
           type="text"
         />
 
